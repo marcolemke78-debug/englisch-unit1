@@ -991,3 +991,10 @@ summary { display: flex; align-items: center; }
   .topic-table th, .topic-table td { padding: 0.5rem 0.3rem; }
   .ampel { white-space: normal; }
 }
+
+/* Wort- und Info-Tabellen in Erklärungen */
+.info-table { width: 100%; border-collapse: collapse; margin: 0.75rem 0; font-size: 0.95rem; }
+.info-table th, .info-table td { border: 1px solid var(--border); padding: 0.55rem 0.7rem; text-align: left; vertical-align: top; line-height: 1.4; }
+.info-table th { background: var(--accent-light); }
+.info-table tr:nth-child(even) td { background: #F9FAFB; }
+.info-table td:first-child { font-weight: 600; width: 40%; overflow-wrap: anywhere; }
