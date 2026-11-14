@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Probe-Test Englisch Unit 1</title>
+<link rel="stylesheet" href="druck.css">
+<style>
+  ol.aufgaben { padding-left: 0; list-style: none; counter-reset: a; margin: 0; }
+  ol.aufgaben > li { counter-increment: a; margin-bottom: 5mm; break-inside: avoid; }
+  ol.aufgaben > li > .frage > span:first-child::before { content: counter(a) ". "; font-weight: 700; }
+  .frage { display: flex; justify-content: space-between; gap: 4mm; }
+  .p { white-space: nowrap; font-size: 9pt; color: #555; }
+  .ankreuz { list-style: none; padding-left: 5mm; margin: 1.5mm 0 0; }
+  .ankreuz li { margin-bottom: 1mm; }
+  .loesung li { margin-bottom: 2.5mm; }
+  .raster td:first-child { width: 40mm; font-weight: 600; }
+  .teil { margin: 2.5mm 0 0 5mm; }
+  table.uebersetz { margin: 1.5mm 0 0 5mm; width: calc(100% - 5mm); }
+  table.uebersetz td { height: 9mm; vertical-align: middle; }
+  table.uebersetz td:nth-child(odd) { width: 22%; }
+</style>
+</head>
+<body>
+<!--
+  Probe-Test Vokabeln Unit 1. Punkte in data-p, Summe automatisch.
+  Kein Satz ist identisch mit einer Übung oder einem Beispielsatz aus der App.
+-->
+<div class="kopf"><h1>Probe-Test</h1><div class="meta"><span class="ka-titel"></span><br>Zeit: <strong>20 Minuten</strong> · Punkte: ____ / <span class="summe"></span></div></div>
+<p class="intro">Name: ______________________ · Ohne Buch, ohne App. Erst ganz am Ende die Lösungen anschauen. Auf die Schreibung achten!</p>
+
+<ol class="aufgaben">
+  <li data-p="10">
+    <div class="frage"><span>Schreib das englische Wort.</span><span class="p"></span></div>
+    <table class="uebersetz">
+      <tr><td>Gehalt</td><td></td><td>Elektrikerin</td><td></td></tr>
+      <tr><td>Lebenslauf</td><td></td><td>Bewerber</td><td></td></tr>
+      <tr><td>Zeugnis; Urkunde</td><td></td><td>Sitzplatz</td><td></td></tr>
+      <tr><td>Klempner</td><td></td><td>nachschlagen</td><td></td></tr>
+      <tr><td>Ausbildung</td><td></td><td>Fahrradkurier</td><td></td></tr>
+    </table>
+  </li>
+  <li data-p="6">
+    <div class="frage"><span>Schreib das deutsche Wort.</span><span class="p"></span></div>
+    <table class="uebersetz">
+      <tr><td>skill</td><td></td><td>closed</td><td></td></tr>
+      <tr><td>experience</td><td></td><td>travel agent</td><td></td></tr>
+      <tr><td>customer service</td><td></td><td>to offer</td><td></td></tr>
+    </table>
+  </li>
+  <li data-p="5">
+    <div class="frage"><span>Ergänze das passende englische Wort.</span><span class="p"></span></div>
+    <div class="teil">a) My grandma had a bad back, so she went to a ____________________ .</div>
+    <div class="teil">b) The man at the hotel desk is the ____________________ .</div>
+    <div class="teil">c) Lisa grew up in Canada. She is a ____________________ of English.</div>
+    <div class="teil">d) It was very cold, so I didn&rsquo;t take ______ my coat.</div>
+    <div class="teil">e) The ____________________ to the castle was long, but the view was great.</div>
+  </li>
+  <li data-p="3">
+    <div class="frage"><span>Gegenteil und Vergangenheit</span><span class="p"></span></div>
+    <div class="teil">a) efficient ↔ ____________________</div>
+    <div class="teil">b) to take off ↔ ____________________</div>
+    <div class="teil">c) Last week the plumber ____________________ with our broken toilet. (to deal with)</div>
+  </li>
+  <li data-p="2">
+    <div class="frage"><span>Wer ist das? Schreib den Beruf auf Englisch.</span><span class="p"></span></div>
+    <div class="teil">a) This person answers the phone and puts your call through: ____________________</div>
+    <div class="teil">b) This person checks the cables when the lights don&rsquo;t work: ____________________</div>
+  </li>
+</ol>
+
+<div class="seitenumbruch"></div>
+<div class="kopf"><h1>Lösungen</h1><div class="meta">Erst nach dem Probe-Test anschauen!</div></div>
+<ol class="loesung">
+  <li>salary · electrician · CV · candidate · certificate · seat · plumber · to look up · training · bike courier. Je 1 P., falsch geschrieben = 0 P.</li>
+  <li>Fähigkeit (Kenntnis, Fertigkeit) · geschlossen · Erfahrung (Erlebnis) · Reisebürokaufmann/-frau · Kundendienst (Kundenbetreuung) · bieten, anbieten. Je 1 P.</li>
+  <li>a) physiotherapist · b) receptionist · c) native speaker · d) off · e) climb. Je 1 P.</li>
+  <li>a) inefficient · b) to put on · c) dealt. Je 1 P.</li>
+  <li>a) telephonist · b) electrician. Je 1 P.</li>
+</ol>
+
+<h2>So wertest du aus</h2>
+<table class="raster">
+  <tr><td>ab 85 % der Punkte</td><td>Sitzt. Nur noch Spickzettel und „Heute dran“.</td></tr>
+  <tr><td>60 bis 84 %</td><td>Fast. Falsche Wörter im Trainer noch einmal üben und dreimal aufschreiben.</td></tr>
+  <tr><td>unter 60 %</td><td>Die Themen mit Fehlern noch einmal in der App, dann Gemischt üben.</td></tr>
+</table>
+<p class="fuss">Eigene Aufgaben, keine Buchseiten.</p>
+
+<script src="../js/ka-daten.js"></script>
+<script>
+  // Punkte anzeigen und zusammenzählen
+  let sum = 0;
+  document.querySelectorAll('ol.aufgaben > li').forEach(li => {
+    const p = Number(li.dataset.p);
+    sum += p;
+    li.querySelector('.p').textContent = '___ / ' + p + ' P.';
+  });
+  document.querySelector('.summe').textContent = sum;
+  document.querySelector('.ka-titel').textContent = KA.title;
+</script>
+</body>
+</html>

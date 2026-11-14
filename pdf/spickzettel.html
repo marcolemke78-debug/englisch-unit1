@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wortliste Englisch Unit 1</title>
+<style>
+  /* Genau 1 Seite A4, zweispaltig. Prüfen: tools/druck_check.sh
+     Je Thema: Regel, ein Beispiel, eine Falle. Mehr passt nicht, und mehr soll auch nicht drauf. */
+  @page { size: A4; margin: 9mm 10mm; }
+  * { box-sizing: border-box; }
+  body { font-family: "Helvetica Neue", Arial, sans-serif; color: #1a1a1a; font-size: 9.5pt; line-height: 1.35; margin: 0; }
+  .kopf { display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2.5px solid #1d4ed8; padding-bottom: 1.5mm; margin-bottom: 2mm; }
+  .kopf h1 { font-size: 15pt; color: #1d4ed8; margin: 0; }
+  .kopf .meta { font-size: 8.5pt; color: #555; text-align: right; }
+  .intro { font-size: 8.5pt; color: #555; margin: 0 0 3mm; }
+  .cols { column-count: 2; column-gap: 6mm; }
+  .thema { break-inside: avoid; margin-bottom: 3mm; }
+  h2 { font-size: 10.5pt; color: #1d4ed8; margin: 0 0 1.2mm; border-bottom: 1.2px solid #1d4ed8; padding-bottom: 0.6mm; }
+  .box { border: 0.6px solid #ccc; border-radius: 3px; padding: 1.4mm 2mm; margin: 0 0 1.4mm; }
+  .regel { background: #f3f6ff; border-color: #c3d3f7; }
+  .beispiel { background: #fff; }
+  .falle { background: #fef2f2; border-color: #f3b4b4; }
+  .box b.lbl { display: inline-block; min-width: 15mm; }
+  table { width: 100%; border-collapse: collapse; font-size: 8.8pt; }
+  th, td { border: 0.5px solid #bbb; padding: 0.8mm 1.5mm; text-align: left; }
+  th { background: #eef2fb; }
+  .fuss { margin-top: 2mm; font-size: 7.5pt; color: #999; text-align: center; }
+  @media screen { body { max-width: 210mm; margin: 0 auto; padding: 10mm; } }
+  .cols table { margin-bottom: 2mm; }
+  td.en { font-weight: 700; width: 42%; }
+</style>
+</head>
+<body>
+<div class="kopf">
+  <h1>Wortliste Englisch · Unit 1</h1>
+  <div class="meta">Buch S. 187 · p. 13 bis 16, Station 2</div>
+</div>
+<p class="intro">Üben: rechte Spalte zudecken, englisches Wort sagen und schreiben, aufdecken. Drucken: Teilen → Drucken (iPad) bzw. Cmd + P.</p>
+<div class="cols" id="liste"></div>
+<div class="box falle" style="margin-top:2mm"><b>Fallen:</b> plumber und climb: b stumm · certifi<b>cate</b> mit c · deal with → <b>dealt</b> with, <b>dealt</b> with ·
+  efficient ↔ <b>in</b>efficient · to take off ↔ to put on · realise (BE) = realize (AE) · Berufe gelten für Mann und Frau: <i>She is a plumber.</i></div>
+<p class="fuss">Wortpaare nach der Vokabelliste, Beispielsätze in der App selbst geschrieben.</p>
+<script src="../js/cards.js"></script>
+<script>
+  // Gruppen nach den Kommentaren in cards.js: v08-v14 Jobs, v15-v28 p. 16, v01-v07 p. 13 bis 15
+  const gruppen = [
+    ['Station 2: Jobs', it => it.id >= 'v08' && it.id <= 'v14'],
+    ['p. 16: Bewerbung und Arbeit', it => it.id >= 'v15'],
+    ['p. 13 bis 15', it => it.id <= 'v07']
+  ];
+  document.getElementById('liste').innerHTML = gruppen.map(g =>
+    '<div class="thema"><h2>' + g[0] + '</h2><table>' +
+    CARDS.items.filter(g[1]).map(it => '<tr><td>' + it.front + '</td><td class="en">' + it.back + '</td></tr>').join('') +
+    '</table></div>').join('');
+</script>
+</body>
+</html>
