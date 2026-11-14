@@ -6,7 +6,7 @@ const KA = {
   id: 'englisch-unit1-2627',
   subject: 'Englisch',
   title: 'Englisch: Vokabeln Unit 1',
-  date: '',                              // YYYY-MM-DD, sobald der Termin feststeht
+  date: '2026-11-16',
   topics: [
     { title: 'Jobs (Station 2)', page: 'Buch S. 187', lessons: [1] },
     { title: 'Bewerbung und Arbeit (p. 16)', page: 'Buch S. 187', lessons: [2] },

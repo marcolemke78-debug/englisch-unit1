@@ -11,7 +11,7 @@
 const Progress = {
   VERSION: 1,
   INTERVALS: [1, 2, 4, 7], // Tage bis zur nächsten Wiederholung je Fach 1..4
-  NEW_CARDS_PER_DAY: 10,
+  NEW_CARDS_PER_DAY: 15, // Test schon am 16.11.: 28 Wörter in 2 Tagen
 
   key() { return 'ka_' + KA.id + '_progress'; },
 

@@ -3,7 +3,7 @@
  * Daten: js/cards.js (CARDS). Fortschritt je Karte: Progress.rateCard().
  *
  * Ablauf einer Runde:
- *   1. erst fällige Karten, dann bis zu 10 neue am Tag
+ *   1. erst fällige Karten, dann bis zu NEW_CARDS_PER_DAY (progress.js) neue am Tag
  *   2. mode 'type':   Vorderseite sehen, Rückseite TIPPEN
  *      mode 'reveal': Vorderseite sehen, selbst erklären, aufdecken, ehrlich einschätzen
  *   3. falsch -> Fach 1 und in derselben Runde noch einmal
